@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./variables.scss";
+body{
+    background: $back-color;
+    padding: 20px;
+}
+p{
+    font-size: 1rem
+}
+.background-secondry-color{
+    background: $secondry-primary;
+}
+.color-pink{
+    color: $color-pink;
+}
+.color-primary{
+    color: $primary;
+}
+.color-paragraph{
+    color: $color-paragraph;
+}
+.color-light{
+    color: $color-light;
+}
+.background-light{
+    background: $color-light;
+}
+.btn-primary{
+    background: $primary;
+    border-color: $primary;
+    &:hover{
+        background: $secondry-primary;
+    border-color: $secondry-primary;
+    }
+}

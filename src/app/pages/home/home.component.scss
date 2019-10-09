@@ -1,0 +1,42 @@
+.topHeading{
+    border-radius: 10px;
+    padding: 0px 20px;
+    .hero-heading{
+        h4{
+            font-size: 1.6rem;
+        }
+    }
+}
+.productList{
+    .project-list{
+        box-shadow: 0px 2px 2px #d6d6d6;
+        height: 100%;
+        .list-img{
+            img{
+                width: 100%;
+                object-fit: cover;
+                height: 200px;
+            }
+            h3{
+                bottom: 0px;
+                background: rgba(0, 0, 0, 0.63);
+                padding: 1px 10px;
+                left: 10px;
+                font-size: 1.5rem;
+            }
+            .buyNow{
+                top: 12px;
+                right: 12px;
+                p{
+                    background: rgba(0, 0, 0, 0.63);
+                }
+            }
+        }
+        .list-info{
+            padding: 5px 10px;
+            p{
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}

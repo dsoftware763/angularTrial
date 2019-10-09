@@ -1,0 +1,33 @@
+<div class="topHeading background-secondry-color">
+  <div class="row align-items-center">
+    <div class="col-sm-4 text-center">
+      <img src="../../../assets/images/projects.png" class="img-fluid">
+    </div>
+    <div class="col-sm-8">
+      <div class="text-center hero-heading">
+          <h4>Our environmental projects are providing many environmental benefits around the world</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="productList my-4">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-lg-4 mb-3" *ngFor="let list of productList">
+      <div class="project-list background-light">
+        <div class="list-img position-relative">
+            <img src="{{list.productImage}}"/>
+            <div class="position-absolute buyNow" *ngIf="list.price">
+              <button class="btn btn-primary">Buy Now</button>
+              <p class="color-light text-center mt-1">${{list.price}}/ton</p>
+            </div>
+            <h3 class="position-absolute text-uppercase color-light">{{list.productHeading}}</h3>
+        </div>
+        <div class="list-info">
+          <p class="color-pink text-capitalize">{{list.title}}</p>
+          <p class="color-primary">{{list.lbs}} lbs. offset</p>
+          <p class="color-paragraph">{{list.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
